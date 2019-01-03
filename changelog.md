@@ -1,5 +1,9 @@
 ### Version History
 
+*4.2.10 (2019/01/03)*
+* Fixed the live-broadcast label problem when forceLive is true
+(https://github.com/OpenSight/mediaelement/pull/1) @xiaosongxiaosong
+
 *4.2.9 (2018/03/27)*
 
 * Fixed typo in documentation (https://github.com/mediaelement/mediaelement/pull/2512) @moagggi
@@ -10,12 +14,12 @@
 * Fixed documentation for React usage @rafa8626
 * Added LICENSE file @rafa8626
 * Added conditionals to avoid executing `fullscreen` methods in audio tags @rafa8626
-* Added conditionals to avoid triggering keyboard events if `enableKeyboard` is false @rafa8626 
+* Added conditionals to avoid triggering keyboard events if `enableKeyboard` is false @rafa8626
 * Added missing conditionals when destroying media @rafa8626
 * Modified Malay language in the demo @rafa8626
 * Set empty source when destroying player to prevent #2499 @rafa8626
 * Added conditional to avoid setting duration when `media` has been destroyed @rafa8626
-* Replaced callback when seeking in paused media to achieve correct behavior @rafa8626  
+* Replaced callback when seeking in paused media to achieve correct behavior @rafa8626
 * Updated documentation about using `startLanguage` and `toggleCaptionsButtonWhenOnlyOne` (https://github.com/mediaelement/mediaelement/pull/2520) @dmdewey
 
 *4.2.8 (2018/01/16)*
@@ -32,7 +36,7 @@
 * Fixed issues with renderers when trying to use `muted` property while using `MediaElement` shim @rafa8626
 * Fixed typo with `Twitch` renderer related to trigger mouse events @rafa8626
 * Fixed typo when assigning options to `Dailymotion` renderer @rafa8626
-* Added missing workflow to set controls on YouTube, Facebook and Dailymotion renderers via `controls` property @rafa8626 
+* Added missing workflow to set controls on YouTube, Facebook and Dailymotion renderers via `controls` property @rafa8626
 * Added missing `playing` event on `Vimeo` and `Dailymotion` renderer @rafa8626
 * Expanded regexp to accept 3-letter country codes and underscore for 4-letter country codes @rafa8626
 * Added `init`, `getElement` and `buildfeatures` methods for WP compatibility @rafa8626
@@ -41,7 +45,7 @@
 * Added jsDelivr badge (https://github.com/mediaelement/mediaelement/pull/2421) @LukasDrgon
 * Fixed issue with `visible` method when `getClientRects` is not a function @rafa8626
 * Fixed issues with `parseInt` method not setting radix in some calls @rafa8626
-* Added missing argument in `secondsToTimeCode` method to check the time format given and display accordingly @rafa8626 
+* Added missing argument in `secondsToTimeCode` method to check the time format given and display accordingly @rafa8626
 * Fixed issues related to duplicated calls when triggering error and fixed style for poster when error is displayed @rafa8626
 * Fixed issue with captions not being rendered inside video frame on any state @rafa8626
 * Integrated `destroy` method in `MediaElement` class @rafa8626
@@ -67,7 +71,7 @@
 * Fixed issues with progress bar tooltip when media duration is too long @rafa8626
 * Added new `mejs` variables needed for WordPress @rafa8626
 * Fixed issues with events fired in incorrect time for `flash_video` renderer @milax
-* Set specific settings for embedding flash object in Edge browser (https://github.com/mediaelement/mediaelement/pull/2364) @milax 
+* Set specific settings for embedding flash object in Edge browser (https://github.com/mediaelement/mediaelement/pull/2364) @milax
 * Added new constant to detect `passive events` and added conditional for `touchstart` events @rafa8626
 * Removed width and height from `embed` object to ensure Flash audio will play on Chrome (https://github.com/mediaelement/mediaelement/pull/2367) @milax
 * Fixed issue with Caption/Chapters menus not selecting options properly when using mouse @rafa8626 and @Instagit
@@ -81,7 +85,7 @@
 * Refactor `Facebook` renderer to solve issues when instantiating multiple videos and added new `lang` parameter to load language on SDK @rafa8626
 * Fixed typos in `Twitch` renderer that caused channels not to play properly @rafa8626
 * Fixed typos in `Flash` renderer to avoid issues with `embed` dimensions @rafa8626
-* Reintegrated old workflow to deal only with `dash.js` play errors @rafa8626 
+* Reintegrated old workflow to deal only with `dash.js` play errors @rafa8626
 * Updated documentation @rafa8626
 * Added documentation about MEJS installation through Bower (https://github.com/mediaelement/mediaelement/pull/2399) @thompsonemerson
 
@@ -121,7 +125,7 @@
 * Removed code to load media when playing considered unnecessary @rafa8626
 * Added mechanism in `YouTube` renderer to add YouTube's thumbnail as a poster using `youtube`'s `imageQuality` parameter @rafa8626
 * Fixed typo on `setFill` mode and fixed issue with poster when using iOS @rafa8626
-* Fixed issue with `M(PEG)-DASH` renderer related to `dash.js` not picking settings from the renderer @rafa8626 
+* Fixed issue with `M(PEG)-DASH` renderer related to `dash.js` not picking settings from the renderer @rafa8626
 * Added missing dependency to `player/library.js` file (https://github.com/mediaelement/mediaelement/pull/2318) @JulianKniephoff
 * Added missing code to explain how to use `MediaElement` with `RequireJS` @rafa8626
 * Integrated Flashls events to be processed by the player @rafa8626
@@ -181,7 +185,7 @@
 * Upgraded `flv.js` to 1.3.0 (https://github.com/mediaelement/mediaelement/pull/2262) @isantolin
 * Updated `hls.js` to a CDN with SSL support (https://github.com/mediaelement/mediaelement/pull/2263) @isantolin
 * Sorted CSS properties to reduce filesize when using gzip (https://github.com/mediaelement/mediaelement/pull/2264) @marcobiedermann
-* Integrated [Stylelint](https://stylelint.io/) for CSS quality @rafa8626 
+* Integrated [Stylelint](https://stylelint.io/) for CSS quality @rafa8626
 * Improvements to CSS stylesheets via `Stylelint` (https://github.com/mediaelement/mediaelement/pull/2266) and (https://github.com/mediaelement/mediaelement/pull/2269) @marcobiedermann
 * Fixed workflow to generate proper vendor prefixes (https://github.com/mediaelement/mediaelement/pull/2265) @marcobiedermann
 * CSS cleanup (https://github.com/mediaelement/mediaelement/pull/2267) @marcobiedermann
