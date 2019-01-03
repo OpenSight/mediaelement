@@ -16,6 +16,8 @@ One file. Any browser. Same UI.
 [![CDNJS](https://img.shields.io/cdnjs/v/mediaelement.svg)](https://cdnjs.com/libraries/mediaelement)
 [![jsDelivr Hits](https://data.jsdelivr.com/v1/package/npm/mediaelement/badge?style=rounded)](https://www.jsdelivr.com/package/npm/mediaelement)
 
+> 重新发布说明： mediaelement 长时间未更新，发布一个 mediaelementjs 到 npm 中，用于解决使用过程中遇到的问题
+
 # Table of Contents
 
 * [Introduction](#intro)
@@ -42,7 +44,7 @@ In general, `MediaElement.js` supports **IE11+, MS Edge, Chrome, Firefox, Safari
 
 ## * IMPORTANT NOTE for Safari users (Jun 8, 2017)
 
-Since Sierra version, `autoplay` policies have changed. You may experience an error if you try to execute `play` programatically or via `autoplay` attribute with MediaElement, unless `muted` attribute is specified. 
+Since Sierra version, `autoplay` policies have changed. You may experience an error if you try to execute `play` programatically or via `autoplay` attribute with MediaElement, unless `muted` attribute is specified.
 
 For more information, read https://webkit.org/blog/7734/auto-play-policy-changes-for-macos/
 
@@ -50,8 +52,8 @@ For more information, read https://webkit.org/blog/7734/auto-play-policy-changes
 ## * IMPORTANT CHANGES on `4.2.0` version
 
 As part of the continuous improvements the player, we have decided to drop completely support for IE9 and IE10, since market share of those browsers together is 0.4%, according to http://caniuse.com/usage-table.
- 
-This change is for `MediaElement` and `MediaElement Plugins` repositories. 
+
+This change is for `MediaElement` and `MediaElement Plugins` repositories.
 
 <a id="migration"></a>
 ## * IMPORTANT: Migrating from `2.x` to `4.x` version
